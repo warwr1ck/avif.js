@@ -15,70 +15,21 @@
       text-align: center;
       color: #333;
     }
-    button {
-      font-size: 25px;
-      cursor: pointer;
-    }
-    button:disabled {
-      cursor: not-allowed;
-    }
-    img {
-      display: block;
-    }
-    .item {
-      display: inline-block;
-      border: 2px solid #aaa;
-    }
-    .hidden {
-      display: none;
-    }
-    .caption {
-      background-color: #ddd;
-      padding: 3px;
-    }
-    .user-img {
+    .img {
       max-width: 100%;
-    }
-    .mexico-img {
-      width: 600px;
-    }
-    .irvine-img {
-      width: 480px;
-      height: 640px;
-    }
-    .ronda {
-      width: 540px;
-    }
-    .ronda-img {
-      height: 540px;
-      transform: rotate(90deg);
-      margin: 210px -210px;
     }
   </style>
   <script src="index.js"></script>
 </head>
 <body>
-  <h1>
-    Test AVIF images
-    <button id="load-button" title="Load AVIF image">Load</button>
-  </h1>
 
-  <div class="item user hidden" id="custom-item"></div>
-  <input class="hidden" id="file-input" type="file" accept=".avif">
-
-  <div class="item mexico">
-    <div class="caption">&lt;img&gt;</div>
-    <img class="mexico-img" src="Mexico.avif">
-  </div>
-
-  <div class="item irvine">
-    <div class="caption">background-image: url()</div>
-    <div class="irvine-img" style="background-image: url(Irvine_CA.avif)"></div>
-  </div>
-
-  <div class="item ronda">
-    <div class="caption">transform: rotate(90deg)</div>
-    <img class="ronda-img" src="Ronda_rotate90.avif">
+  <div>
+    <div>
+      <img src="1.avif" alt="" class="img">
+    </div>
+    <div>
+      <img src="2.avif" alt="" class="img">
+    </div>
   </div>
 </body>
 </html>
